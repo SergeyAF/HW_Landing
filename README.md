@@ -1,9 +1,8 @@
 HW_Landing
-Home Work Landing
 
 Адаптивный лендинг
 
-В данном лендинге используются шрифты
+Используемые шрифты:
 - dosis-light-webfont
 - dosis-regular-webfont
 - et-line
@@ -11,8 +10,86 @@ Home Work Landing
 - opensans-regular-webfont
 а так же fontawesome
 
+Сброс ситлей и дефолтная стилизация тегов.
 
-Хедер состоит из логотипа logo.png (слева)
+```css
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+
+body{
+	margin: 0;
+	font-family: 'opensans-light', sans-serif;
+	font-size: 15px;
+	color: #777;
+}
+
+a{
+	color: inherit;
+	text-decoration: none;
+}
+a:hover, a:active{
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+}
+img {
+	display: inline-block;
+	max-width: 100%;
+	vertical-align: middle;
+}
+button {
+	outline: none;
+	border: none;
+	cursor: pointer;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-weight: normal;
+	font-family: 'dosis-regular', sans-serif;
+	margin: 0 0 7px;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 18px;
+	color: #111;
+	letter-spacing: 0.5em;
+	margin: 0 0 75px;
+}
+
+h1 {
+	font-size: 30px;
+	letter-spacing: 51px;
+	text-indent: 51px;
+	margin-bottom: 100px;
+}
+
+input, textarea {
+	font-family: 'opensans-regular', sans-serif;
+	font-size: 12px;
+	line-height: 1;
+	letter-spacing: 2.5px;
+}
+```
+
+
+Хедер 
+
+```css
+.header {
+	background-color: #9f9f9f;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 11px;
+}
+```
+
+состоит из логотипа logo.png (слева)
 и пунктов меню (справа)
 - Home
 - About
