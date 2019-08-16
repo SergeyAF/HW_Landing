@@ -76,9 +76,9 @@ Services
 
 Каждый элемент содержит ссылку на свой id для переключения табов.
 
-далее идут обвертки с id
+далее идут обвертки с id (где tab-id = "branding, web-design, gr-design, development, photography" соответсвенно
 ```html
-<div id="branding">
+<div id="tab-id">
 ```
 внутри которых идет текст сгруппированый по 3 колонки в ряд.
 
